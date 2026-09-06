@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #0f766e;
+            --accent-hover: #115e59;
+            --ink: #1f2937;
+            --muted: #5f6b7a;
+            --surface: #fff;
+            --background: #f6f7f8;
+            --border: #d9e0e4;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            color: var(--ink);
+            background: var(--background);
+            font-family: 'Manrope', 'Noto Sans SC', sans-serif;
+            text-align: center;
+        }
+
+        .panel {
+            width: min(560px, 100%);
+            padding: 34px 28px;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: var(--surface);
+            box-shadow: 0 14px 35px rgba(23, 37, 54, 0.08);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-family: 'Noto Serif SC', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        p {
+            margin: 0 0 18px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 8px;
+            color: #fff;
+            background: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        a:hover {
+            background: var(--accent-hover);
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h1>页面未找到</h1>
+        <p>你访问的页面不存在，先回到简历首页继续查看吧。</p>
+        <a href="/">返回首页</a>
+    </div>
+</body>
+</html>

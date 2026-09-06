@@ -1,0 +1,195 @@
+/* Portfolio page uses the same Apple-inspired tokens as the resume. */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 56px 20px 40px;
+    background: var(--background);
+}
+
+.portfolio-container {
+    width: min(760px, 100%);
+}
+
+.portfolio-header {
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    margin-bottom: 14px;
+    color: var(--text);
+    font-size: clamp(1.65rem, 4vw, 2.15rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    background: var(--surface);
+    font-size: 0.76rem;
+    font-weight: 500;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.portfolio-card {
+    display: block;
+    padding: 22px 24px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    color: inherit;
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    transition: border-color 200ms var(--curve), box-shadow 500ms var(--curve), transform 200ms var(--curve);
+}
+
+.portfolio-card:hover {
+    border-color: var(--blue);
+    box-shadow: var(--shadow-lg);
+    text-decoration: none;
+}
+
+.portfolio-card:active {
+    transform: scale(0.985);
+}
+
+.portfolio-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.portfolio-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 7px 14px;
+    border: 1px solid var(--blue);
+    border-radius: 999px;
+    color: var(--blue);
+    background: transparent;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: color 200ms var(--curve), background-color 200ms var(--curve), transform 200ms var(--curve);
+}
+
+.portfolio-button:hover {
+    color: #ffffff;
+    background: var(--blue);
+    text-decoration: none;
+}
+
+.portfolio-button:active {
+    transform: scale(0.97);
+}
+
+.portfolio-note {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    background: var(--background);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.portfolio-card .label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--blue);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.portfolio-card .title {
+    color: var(--text);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.portfolio-card .meta {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 0.88rem;
+}
+
+.portfolio-card .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 13px;
+    color: var(--faint);
+    font-size: 0.8rem;
+}
+
+.portfolio-card .arrow {
+    float: right;
+    color: var(--faint);
+    font-size: 1.2rem;
+    transition: color 200ms var(--curve), transform 200ms var(--curve);
+}
+
+.portfolio-card:hover .arrow {
+    color: var(--blue);
+    transform: translateX(4px);
+}
+
+.divider {
+    color: var(--faint);
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.portfolio-footer {
+    margin-top: 38px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    color: var(--faint);
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+.portfolio-footer a {
+    color: var(--blue);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 34px 12px 28px;
+    }
+
+    .portfolio-header {
+        margin-bottom: 28px;
+    }
+
+    .portfolio-card {
+        padding: 18px;
+    }
+}

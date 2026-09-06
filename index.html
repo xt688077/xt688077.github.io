@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="description" content="陈新挺 · 运营/销售/新媒体方向公开版简历，具备电商运营、私域增长与 AI 协作开发经验。">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈新挺的个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色主题" title="切换主题">🌛</button>
+            <div class="profile-info">
+                <p class="eyebrow">求职简历 · 运营 / 销售 / 新媒体</p>
+                <h1>陈新挺</h1>
+                <div class="subtitle-row">
+                    <p class="subtitle">统计与大数据分析专业 · 2026 届</p>
+                    <p class="collaboration-note">电商运营 · 私域增长 · AI 协作开发</p>
+                </div>
+                <p><span class="icon">🔗</span> 公开版联系方式：请通过 GitHub 主页或站点留言联系</p>
+                <p><span class="icon">🎯</span> 求职方向：电商 / 用户运营、销售顾问、新媒体运营助理、AI 辅助开发实习</p>
+                <div class="links">
+                    <a href="zpj.html" class="button button-secondary">↗ 查看作品集</a>
+                </div>
+            </div>
+            <div class="portrait-frame portrait-placeholder" aria-label="公开版头像占位">
+                <span>CXT</span>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+
+        function updateThemeControl() {
+            const isDark = document.documentElement.classList.contains('dark-theme');
+            themeToggle.textContent = isDark ? '🌞' : '🌛';
+            themeToggle.setAttribute('aria-label', isDark ? '切换浅色主题' : '切换深色主题');
+        }
+
+        try {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.classList.add('dark-theme');
+            }
+        } catch (error) {
+            // 浏览器禁止本地存储时，页面仍然可以正常使用。
+        }
+        updateThemeControl();
+
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark-theme');
+            const isDark = document.documentElement.classList.contains('dark-theme');
+            updateThemeControl();
+            try {
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            } catch (error) {
+                // 忽略存储错误，不打断主题切换。
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+                link.setAttribute('rel', 'noopener noreferrer');
+            });
+        });
+    </script>
+
+    <section class="intro" aria-labelledby="intro-title">
+        <div class="container">
+            <div class="intro-heading">
+                <p class="section-kicker">PROFILE</p>
+                <h2 id="intro-title">个人简介</h2>
+                <p class="intro-lead">
+                    统计与大数据分析专业在读，具备电商平台运营、私域社群、直播内容和 AI 协作开发实践。能够独立完成商品与内容准备、用户沟通、订单跟进和反馈整理等基础闭环，并根据数据与用户反馈持续优化执行。
+                </p>
+            </div>
+
+            <div class="intro-grid">
+                <article class="intro-point">
+                    <h3>电商运营与销售</h3>
+                    <p>独立运营 3 个闲鱼账号，覆盖商品上架、标题优化、咨询转化、订单跟进与售后处理；其中 2 个账号达到五级鱼小铺标准，累计约 1500 条好评，综合好评率 99%。</p>
+                </article>
+                <article class="intro-point">
+                    <h3>私域与内容运营</h3>
+                    <p>参与管理约 2000 人 QQ 消费权益社群，负责信息筛选、内容分发与用户维护；具备产品拍摄和基础剪辑能力，短视频单条作品获得 3000+ 点赞、15 万+ 浏览。</p>
+                </article>
+                <article class="intro-point">
+                    <h3>AI 协作与数据基础</h3>
+                    <p>熟悉使用 Codex、Claude 等 AI 编程工具，能够参与需求拆解、代码生成、调试和迭代；具备 Python、数据分析与数据可视化基础，可协助完成网页及小程序原型。</p>
+                </article>
+                <article class="intro-point">
+                    <h3>数码产品与执行</h3>
+                    <p>熟悉手机、电脑、相机等消费数码产品的参数与使用场景，掌握基础手机维修技能；沟通直接、执行稳定，能够快速理解任务并推进落地。</p>
+                </article>
+            </div>
+
+            <p class="highlight">
+                求职方向：电商 / 用户运营、销售顾问、新媒体运营助理、AI 辅助开发实习。
+            </p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+<section class="education-section">
+    <h2>教育背景</h2>
+    <div class="experience-item" style="margin-bottom: 0;">
+        <div class="details">
+            <h3>湛江幼儿师范专科学校</h3>
+            <p>统计与大数据分析专业 · 2024.09 - 2026.09 预计毕业</p>
+        </div>
+        <div class="content">
+            <ul>
+                <li><strong>相关课程：</strong>Python 编程基础、数据分析与应用、数据可视化技术、数据挖掘与网络爬虫、应用回归分析、统计学原理、大数据应用技术基础。</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="experience-section">
+                <h2>实践经历</h2>
+                <div class="experience-item">
+                    <div class="details">
+                        <h3>手机店销售实习</h3>
+                        <p>门店客户接待、产品介绍与销售促成</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>负责客户接待、需求沟通、产品对比与功能讲解，协助推进销售成交。</li>
+                            <li>协助完成门店陈列、商品拍摄展示及日常销售支持，保持现场信息与物料整齐。</li>
+                            <li>掌握基础手机维修与售后答疑，提升数码产品理解和客户服务能力。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="details">
+                        <h3>闲鱼账号运营</h3>
+                        <p>商品上架、标题优化、客户咨询、订单跟进与售后处理</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>独立运营 3 个闲鱼账号，完成商品上架、标题优化、客户咨询、订单跟进与售后处理。</li>
+                            <li>持续优化商品信息与沟通流程，其中 2 个账号达到五级鱼小铺标准。</li>
+                            <li>累计约 1500 条好评，综合好评率 99%，形成稳定的交易与服务闭环。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="details">
+                        <h3>AI 辅助开发实践</h3>
+                        <p>健身小程序、商品记账小程序、商品展示网页开发协作</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>使用 Codex、Claude 等工具参与健身小程序、商品记账小程序和商品展示网页开发。</li>
+                            <li>参与需求拆解、页面结构设计、代码生成、问题定位与方案验证，推动功能快速迭代。</li>
+                            <li>能够阅读并调整基础 HTML、CSS、JavaScript 代码，协助处理常见页面与交互问题。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="details">
+                        <h3>校园私域与社群运营</h3>
+                        <p>联系人沉淀、社群维护、内容分发与活动触达</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>在校内沉淀私域联系人 300 余人，通过线下接触、活动宣传和持续互动保持联系。</li>
+                            <li>参与管理约 2000 人 QQ 消费权益社群，负责优惠信息与用户权益内容的整理、筛选和推送。</li>
+                            <li>积累用户分层、信息分发和社群维护的基础经验。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="details">
+                        <h3>直播带货实践</h3>
+                        <p>产品展示、直播互动与销售转化</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>参与直播带货，负责产品展示、卖点讲解和使用场景介绍，帮助用户快速理解商品价值。</li>
+                            <li>根据直播节奏和评论区反馈调整表达，主动回应问题并引导用户咨询。</li>
+                            <li>参与直播前产品准备与内容梳理，直播后整理反馈，持续优化讲解重点。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h2>核心能力</h2>
+                <ul class="skills-list">
+                    <li><strong>运营执行</strong>熟悉商品上架、标题优化、咨询回复、订单跟进、售后处理和内容分发等基础流程。</li>
+                    <li><strong>销售沟通</strong>能够完成客户接待、需求挖掘、产品对比、卖点讲解和咨询转化。</li>
+                    <li><strong>私域与直播</strong>具备社群维护、活动触达、直播展示、口播讲解和评论互动经验。</li>
+                    <li><strong>内容制作</strong>会使用基础剪辑工具完成素材裁剪、字幕添加、画面调整和简单成片。</li>
+                    <li><strong>数码产品</strong>熟悉手机、电脑、相机等产品的参数、性能和使用场景，掌握基础手机维修。</li>
+                    <li><strong>AI 与数据</strong>能使用 Codex、Claude 辅助需求拆解、代码生成与调试；具备 Python、统计分析和数据可视化基础。</li>
+                </ul>
+            </section>
+
+            <section class="summary-section">
+                <h2>自我评价</h2>
+                <div class="summary-card">
+                    <p>
+                        具备线上平台运营与线下一线销售双重实践，能够完成从商品 / 内容准备、用户沟通到订单与反馈跟进的基础闭环。熟悉 Codex、Claude 等 AI 工具，具备 Python 和数据分析基础，学习上手快、执行稳定，适合电商运营、用户运营、销售顾问、新媒体助理及 AI 协作开发岗位。
+                    </p>
+                </div>
+            </section>
+
+            <section class="interests-section" aria-labelledby="interests-title">
+                <div class="interest-shell">
+                    <div class="interest-collage" aria-hidden="true">
+                        <span class="hobby-photo hobby-photo-1">FITNESS</span>
+                        <span class="hobby-photo hobby-photo-2">GUITAR</span>
+                        <span class="hobby-photo hobby-photo-3">PHOTO</span>
+                        <span class="hobby-photo hobby-photo-4">TRAVEL</span>
+                        <span class="hobby-photo hobby-photo-5">LIFE</span>
+                    </div>
+                    <div class="interest-content">
+                        <p class="section-kicker">LIFE OUTSIDE WORK</p>
+                        <h2 id="interests-title">兴趣与特质</h2>
+                        <p>长期保持健身、弹吉他、摄影和旅行的习惯，这些爱好让我保持了持续的执行力与对新事物的敏锐感知。</p>
+                        <div class="interest-tags" aria-label="兴趣标签">
+                            <span>健身 · 自律与坚持</span>
+                            <span>吉他 · 专注与练习</span>
+                            <span>摄影 · 观察与记录</span>
+                            <span>旅行 · 好奇与探索</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 陈新挺的简历网站。</p>
+        </div>
+    </footer>
+</body>
+</html>
