@@ -2,7 +2,7 @@
 
 这是一个适合上传 GitHub Pages 的公开版个人简历网站，已对联系方式、头像、截图和原始简历文件做脱敏处理。
 
-**在线预览：** [xt688077.github.io/-](https://xt688077.github.io/-/)
+**在线预览：** [xt688077.github.io](https://xt688077.github.io/)
 
 项目采用原生 HTML、CSS 和 JavaScript 构建，无需安装依赖即可部署。
 
